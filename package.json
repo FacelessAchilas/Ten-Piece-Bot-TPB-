@@ -2,7 +2,7 @@
   "name": "tenpiecebot",
   "version": "1.0.0",
   "description": "[Ten Piece Bot] is a bot designed to make roleplay more convenient in the Ten Piece roleplay server.",
-  "main": "index.js",
+  "main": "bot.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
