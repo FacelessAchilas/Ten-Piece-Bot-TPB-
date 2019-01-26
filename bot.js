@@ -13,14 +13,6 @@ var angrygifs = Array("https://i.gifer.com/5tth.gif", "https://i.kym-cdn.com/pho
 var hotgifs = Array("https://i.gifer.com/JScV.gif", "https://media.giphy.com/media/BpbwDqD5r2HeM/giphy.gif", "https://i.makeagif.com/media/9-29-2015/jkUBGB.gif", "https://66.media.tumblr.com/8931059debd73252b3dd2da684aa2d01/tumblr_ookp6oRbF61su5a4po8_r1_400.gif", "https://i.gifer.com/46X0.gif", "http://66.media.tumblr.com/17dea2505d84f4a356214548b1556964/tumblr_ntvrej94ME1tp5yuio1_500.gif", "https://pa1.narvii.com/6576/4b7ac6ac63f371cffc2a621ed0d1507d133bb690_hq.gif", "https://i.pinimg.com/originals/4a/bf/8e/4abf8ece201ea2302dc31593d0f50039.gif")
 var sadgifs = Array("https://media.giphy.com/media/YbDQYrSihr584/giphy.gif", "https://66.media.tumblr.com/c323cd123a039a2f2dfd92ff64688b85/tumblr_mpun6fP1Fa1speqruo1_500.gif", "https://media.giphy.com/media/CB5jiL6R3zzJm/giphy.gif", "https://media.giphy.com/media/RdJzquHQceMKlMwrg2/giphy.gif")
 //////////////////////////////////////////////////////////////////////////
-var akidescription = `Aki Aki [Age:19 | Gender:Female]
-Aki was lonely as a child, so she got angry and started yelling. Her mom decided to lecture her in the best way - cut her in multilpe locations and give her 3 huge scars. Turns out it wasn't her mom cutting her, it was the sword! So she took the sword and killed an entire city at age 14. AGE 14 THE FUCK LEOREXBAZOOKA KID`
-var ceradescription = `Cera Rainhill [Age:20 | Gender:Female]
-Cera was born to be really powerful with electro, but she was born disabled so she couldnt reach that level. Her dad was an asshole and couldn't do shit so he left and gave Cera daddy issues. Then a bunch of sardines came and fucked Cera's mom up. She left and started working in some city. Prety boring smh.`
-var katsuodescription = `Katsuo Knee [Age:20 | Gender:Male]
-His last name is Knee and I respect that. He trained a bunch and then got daddy issues just like Cera, except his mom didn't die lol. Anyway after daddy issues he decide to go look for his dad via a note he left him thatcouldbemisleadinghimbutyouknowplotsowhatever.`
-var jackdescription = `Jack Blackhorse [Age:26 | Gender:Male]
-Some old hag who wants to mingle with some young fishes. Jack was kidnapped and raped (Not realy but this is my description so lol) by some pirates during a raid, his parents were prob killed by it. Anyway he ran away from that pirate ship and apparently didn't have any trauma because he joined another crew a bit later. This one entirely got killed. I can't remember what happened to the third one. Now he wanders around or smth.`
 
 //////////////////////////////////////////////////////////////////////////
 
@@ -117,25 +109,6 @@ bot.on('message', function(message){
      message.channel.send(emote) 
     }
     
-    if(message.content == "ten!Character: Aki")
-    {
-        message.channel.send(akidescription)
-    }
-    
-        if(message.content == "ten!Character: Cera")
-    {
-        message.channel.send(ceradescription)
-    }
-    
-        if(message.content == "ten!Character: Jack")
-    {
-        message.channel.send(jackdescription)
-    }
-    
-        if(message.content == "ten!Character: Katsuo")
-    {
-        message.channel.send(katsuodescription)
-    }
 });
 
 bot.on('ready', function(){
