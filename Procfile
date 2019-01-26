@@ -1,1 +1,1 @@
-worker: node Ten-Piece-Bot-TPB-
+worker: node bot.js
