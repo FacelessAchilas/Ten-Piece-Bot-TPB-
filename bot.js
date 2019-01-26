@@ -15,6 +15,13 @@ var sadgifs = Array("https://media.giphy.com/media/YbDQYrSihr584/giphy.gif", "ht
 //////////////////////////////////////////////////////////////////////////
 var akidescription = `Aki Aki [Age:19 | Gender:Female]
 Aki was lonely as a child, so she got angry and started yelling. Her mom decided to lecture her in the best way - cut her in multilpe locations and give her 3 huge scars. Turns out it wasn't her mom cutting her, it was the sword! So she took the sword and killed an entire city at age 14. AGE 14 THE FUCK LEOREXBAZOOKA KID`
+var ceradescription = `Cera Rainhill [Age:20 | Gender:Female]
+Cera was born to be really powerful with electro, but she was born disabled so she couldnt reach that level. Her dad was an asshole and couldn't do shit so he left and gave Cera daddy issues. Then a bunch of sardines came and fucked Cera's mom up. She left and started working in some city. Prety boring smh.`
+var katsuodescription = `Katsuo Knee [Age:20 | Gender:Male]
+His last name is Knee and I respect that. He trained a bunch and then got daddy issues just like Cera, except his mom didn't die lol. Anyway after daddy issues he decide to go look for his dad via a note he left him thatcouldbemisleadinghimbutyouknowplotsowhatever.`
+var jackdescription = `Jack Blackhorse [Age:26 | Gender:Male]
+Some old hag who wants to mingle with some young fishes. Jack was kidnapped and raped (Not realy but this is my description so lol) by some pirates during a raid, his parents were prob killed by it. Anyway he ran away from that pirate ship and apparently didn't have any trauma because he joined another crew a bit later. This one entirely got killed. I can't remember what happened to the third one. Now he wanders around or smth.`
+
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
@@ -113,6 +120,21 @@ bot.on('message', function(message){
     if(message.content == "ten!Character: Aki")
     {
         message.channel.send(akidescription)
+    }
+    
+        if(message.content == "ten!Character: Cera")
+    {
+        message.channel.send(ceradescription)
+    }
+    
+        if(message.content == "ten!Character: Jack")
+    {
+        message.channel.send(jackdescription)
+    }
+    
+        if(message.content == "ten!Character: Katsuo")
+    {
+        message.channel.send(katsuodescription)
     }
 });
 
