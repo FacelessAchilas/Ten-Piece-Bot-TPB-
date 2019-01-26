@@ -81,6 +81,10 @@ bot.on('message', function(message){
         message.channel.send("IM POOPING EVERYWHERE!!!!!!!")
     }
 
+    if(message.content == "!angry")
+    {
+     message.channel.send("https://i.gifer.com/5tth.gif")   
+    }
 });
 
 bot.on('ready', function(){
