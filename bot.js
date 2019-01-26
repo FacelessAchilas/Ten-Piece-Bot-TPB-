@@ -12,6 +12,10 @@ var happygifs = Array("https://pa1.narvii.com/6422/812ba248dbfa95b26e0f1ecf9a922
 var angrygifs = Array("https://i.gifer.com/5tth.gif", "https://i.kym-cdn.com/photos/images/original/001/143/091/22f.gif", "https://pa1.narvii.com/6381/b4930df8aeef4cc3fb56ed5b102b8310d04349c6_hq.gif", "https://i.gifer.com/3YIe.gif")
 var hotgifs = Array("https://i.gifer.com/JScV.gif", "https://media.giphy.com/media/BpbwDqD5r2HeM/giphy.gif", "https://i.makeagif.com/media/9-29-2015/jkUBGB.gif", "https://66.media.tumblr.com/8931059debd73252b3dd2da684aa2d01/tumblr_ookp6oRbF61su5a4po8_r1_400.gif", "https://i.gifer.com/46X0.gif", "http://66.media.tumblr.com/17dea2505d84f4a356214548b1556964/tumblr_ntvrej94ME1tp5yuio1_500.gif", "https://pa1.narvii.com/6576/4b7ac6ac63f371cffc2a621ed0d1507d133bb690_hq.gif", "https://i.pinimg.com/originals/4a/bf/8e/4abf8ece201ea2302dc31593d0f50039.gif")
 var sadgifs = Array("https://media.giphy.com/media/YbDQYrSihr584/giphy.gif", "https://66.media.tumblr.com/c323cd123a039a2f2dfd92ff64688b85/tumblr_mpun6fP1Fa1speqruo1_500.gif", "https://media.giphy.com/media/CB5jiL6R3zzJm/giphy.gif", "https://media.giphy.com/media/RdJzquHQceMKlMwrg2/giphy.gif")
+//////////////////////////////////////////////////////////////////////////
+var akidescription = `Aki Aki [Age:19 | Gender:Female]
+Aki was lonely as a child, so she got angry and started yelling. Her mom decided to lecture her in the best way - cut her in multilpe locations and give her 3 huge scars. Turns out it wasn't her mom cutting her, it was the sword! So she took the sword and killed an entire city at age 14. AGE 14 THE FUCK LEOREXBAZOOKA KID`
+//////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
     if(message.content == "ten!RandomFruit")
@@ -104,6 +108,11 @@ bot.on('message', function(message){
     {
      var emote = sadgifs[Math.floor(Math.random()*sadgifs.length)]
      message.channel.send(emote) 
+    }
+    
+    if(message.content == "ten!Character: Aki")
+    {
+        message.channel.send(akidescription)
     }
 });
 
