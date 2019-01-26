@@ -1,0 +1,14 @@
+{
+  "name": "tenpiecebot",
+  "version": "1.0.0",
+  "description": "[Ten Piece Bot] is a bot designed to make roleplay more convenient in the Ten Piece roleplay server.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Just/in time#7723",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.4.2"
+  }
+}
