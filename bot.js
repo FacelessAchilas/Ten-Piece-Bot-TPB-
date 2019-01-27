@@ -125,7 +125,7 @@ bot.on('message', function(message){
         // split the value and key, and grab the value [1]
         var iamlookingforthis = filteredParts[0].split(':')[1];
 
-        alert(iamlookingforthis); // 226885
+        message.channel.send(iamlookingforthis); // 226885
             
             
             
