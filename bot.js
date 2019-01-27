@@ -108,6 +108,14 @@ bot.on('message', function(message){
      var emote = sadgifs[Math.floor(Math.random()*sadgifs.length)]
      message.channel.send(emote) 
     }
+    
+    if(message.content.startsWith("ten!Random "))
+    {
+     var str = message.content.replace('ten!Random ','');   
+     var numero = Math.random() * (str - 1) + 1;
+     var value = Math.round(numero)
+     message.channel.send(value)
+    }
    
        
 });
