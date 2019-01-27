@@ -113,19 +113,10 @@ bot.on('message', function(message){
         {
             
             
-            var str = message.content
-        var parts = str.split(/:/g); // split the string with these characters
+         var str = message.content;
+         var value = str.match(/ten!Random:(\d+)/i)[1];
+         message.channel.send(value)
 
-        // find the piece with the key `iamlookingforthis`
-        var filteredParts = parts.filter(function (part) {
-          return part.split(':')[0] === 'ten!Random';
-        });
-
-        // from the filtered array, get the first [0]
-        // split the value and key, and grab the value [1]
-        var iamlookingforthis = filteredParts[0].split(':')[1];
-
-        message.channel.send(iamlookingforthis); // 226885
             
             
             
