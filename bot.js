@@ -114,7 +114,7 @@ bot.on('message', function(message){
             
             
             var str = message.content
-        var parts = str.split(/[#:\?&]/g); // split the string with these characters
+        var parts = str.split(/:/g); // split the string with these characters
 
         // find the piece with the key `iamlookingforthis`
         var filteredParts = parts.filter(function (part) {
