@@ -109,6 +109,13 @@ bot.on('message', function(message){
      message.channel.send(emote) 
     }
     
+        if(message.content == "ten!Random")
+        {
+          var str = message.content  
+          var value = str.match(/ten!Random(\d+)/i)[1];
+          message.channel.send(value)
+        {
+    
 });
 
 bot.on('ready', function(){
