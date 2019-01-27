@@ -109,11 +109,27 @@ bot.on('message', function(message){
      message.channel.send(emote) 
     }
     
-        if(message.content == "ten!Random")
+        if(message.content == "ten!Random:")
         {
-          var str = message.content  
-          var value = str.match(/ten!Random(\d+)/i)[1];
-          message.channel.send(value)
+            
+            
+            var str = '#' + message.content
+        var parts = str.split(/[#\?&]/g); // split the string with these characters
+
+        // find the piece with the key `iamlookingforthis`
+        var filteredParts = parts.filter(function (part) {
+          return part.split(':')[0] === 'ten!Random';
+        });
+
+        // from the filtered array, get the first [0]
+        // split the value and key, and grab the value [1]
+        var iamlookingforthis = filteredParts[0].split(':')[1];
+
+        alert(iamlookingforthis); // 226885
+            
+            
+            
+            
         }
     
 });
