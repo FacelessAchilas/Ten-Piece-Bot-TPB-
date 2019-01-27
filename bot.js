@@ -114,7 +114,7 @@ bot.on('message', function(message){
             
             
          var str = message.content;
-         var value = str.match(/ten!Random:(\d+)/i)[1];
+         var value = str.match(/ten!Random:/i)[1];
          message.channel.send(value)
 
             
