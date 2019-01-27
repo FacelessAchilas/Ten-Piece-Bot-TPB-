@@ -13,7 +13,7 @@ var angrygifs = Array("https://i.gifer.com/5tth.gif", "https://i.kym-cdn.com/pho
 var hotgifs = Array("https://i.gifer.com/JScV.gif", "https://media.giphy.com/media/BpbwDqD5r2HeM/giphy.gif", "https://i.makeagif.com/media/9-29-2015/jkUBGB.gif", "https://66.media.tumblr.com/8931059debd73252b3dd2da684aa2d01/tumblr_ookp6oRbF61su5a4po8_r1_400.gif", "https://i.gifer.com/46X0.gif", "http://66.media.tumblr.com/17dea2505d84f4a356214548b1556964/tumblr_ntvrej94ME1tp5yuio1_500.gif", "https://pa1.narvii.com/6576/4b7ac6ac63f371cffc2a621ed0d1507d133bb690_hq.gif", "https://i.pinimg.com/originals/4a/bf/8e/4abf8ece201ea2302dc31593d0f50039.gif", "https://media.discordapp.net/attachments/381885960297906196/537540222930649098/image0.gif")
 var sadgifs = Array("https://media.giphy.com/media/YbDQYrSihr584/giphy.gif", "https://66.media.tumblr.com/c323cd123a039a2f2dfd92ff64688b85/tumblr_mpun6fP1Fa1speqruo1_500.gif", "https://media.giphy.com/media/CB5jiL6R3zzJm/giphy.gif", "https://media.giphy.com/media/RdJzquHQceMKlMwrg2/giphy.gif")
 //////////////////////////////////////////////////////////////////////////
-
+var cmds = "```php\n [Commands]\n [1]ten!RandomFruit\n \n [2]ten!IslandFruit\n \n [3]ten!Random (Number)\n Selects a random number from one to what you have typed in.\n \n [4]!(Emotion)\n Posts a gif depending on what emotion you typed in (F.E. !happy).```"
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
@@ -116,7 +116,11 @@ bot.on('message', function(message){
      var value = Math.round(numero)
      message.channel.send(value)
     }
-   
+
+    if(message.content == "ten!cmds")
+    {
+        message.channel.send(cmds)
+    }   
        
 });
 
