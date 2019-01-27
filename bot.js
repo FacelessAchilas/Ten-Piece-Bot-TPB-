@@ -109,6 +109,11 @@ bot.on('message', function(message){
      message.channel.send(emote) 
     }
     
+    if(message.content == "ten!Random ")
+    {
+     var str = message.content.replace('ten!Random ','');   
+     message.channel.send(str)
+    }
        
 });
 
