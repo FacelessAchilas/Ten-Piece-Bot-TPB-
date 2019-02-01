@@ -115,16 +115,17 @@ bot.on('message', function(message){
      var numero = Math.random() * (str - 1) + 1;
      var value = Math.round(numero)
      message.channel.send(value)
-        if(value == "NaN")
-        {      
-            message.channel.send("Fuck!!! (T~T)  I can't do math with numbers!!!")   
-        }
     }
 
     if(message.content == "ten!cmds")
     {
         message.channel.send(cmds)
     }   
+    
+    if(message.content == "NaN")
+    {  
+     message.channel.send("Fuck!!! I can't do math with numbers! T~T")      
+    }
     
 });
 
