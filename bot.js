@@ -124,7 +124,7 @@ bot.on('message', function(message){
     
     if(message.content == "NaN")
     {  
-     message.channel.send("Fuck!!! I can't do math with numbers! T~T")      
+     message.channel.send("Fuck you!!! I can't do math with numbers! T~T")      
     }
     
 });
