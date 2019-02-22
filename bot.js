@@ -113,11 +113,11 @@ bot.on('message', function(message){
     {
      //var str = message.content.replace('ten!Random ',''); 
      var str = message.content.substring("ten!Random", ",") 
-     var number1 = str.content.replace(str,'')
-     var number2 = str.content.replace(number1, '')
-     var numero = Math.random() * (number2 - number1) + number1;
-     var value = Math.round(numero)
-     message.channel.send(value)
+     //var number1 = str.content.replace(str,'')
+     //var number2 = str.content.replace(number1, '')
+     //var numero = Math.random() * (number2 - number1) + number1;
+     //var value = Math.round(numero)
+     message.channel.send(str)
     }
 
     if(message.content == "ten!cmds")
