@@ -123,7 +123,7 @@ bot.on('message', function(message){
         message.channel.send(cmds)
     } 
     
-    if(message.content == "!angry")
+    if(message.content == "Ten, do you love me?")
     {
      var loveme2 = loveme[Math.floor(Math.random()*loveme.length)]
      message.channel.send(loveme2) 
