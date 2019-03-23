@@ -14,6 +14,7 @@ var hotgifs = Array("https://i.gifer.com/JScV.gif", "https://media.giphy.com/med
 var sadgifs = Array("https://media.giphy.com/media/YbDQYrSihr584/giphy.gif", "https://66.media.tumblr.com/c323cd123a039a2f2dfd92ff64688b85/tumblr_mpun6fP1Fa1speqruo1_500.gif", "https://media.giphy.com/media/CB5jiL6R3zzJm/giphy.gif", "https://media.giphy.com/media/RdJzquHQceMKlMwrg2/giphy.gif")
 //////////////////////////////////////////////////////////////////////////
 var cmds = "```php\n [Commands]\n [1]ten!RandomFruit\n \n [2]ten!IslandFruit\n \n [3]ten!Random (Number)\n Selects a random number from one to what you have typed in.\n \n [4]!(Emotion)\n Posts a gif depending on what emotion you typed in (F.E. !happy).```"
+var loveme = Array("No, you are stupid.","No, you are a disappointment.","No, you smell.","No, you're fat.","Yes! I love you XOXO","Yes! You're so cute!","Yes! If only I'd be real...","Go away, hoe","*Jojo reference*, that means no.","*One Piece reference*, that means yes.","You're in for a bumpy ride")
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
