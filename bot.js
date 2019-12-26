@@ -63,28 +63,6 @@ var SuperRareWeapons = Array(Yoru,Morakumogiri,Funkfreed)
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
-    if(message.content == "ten!ShopItem")
-    {
-        var rarity = rarities2[Math.floor(Math.random()*rarities.length)];
-    
-         if(rarity == "common")
-        {
-         var fruit = CommonWeapons[Math.floor(Math.random()*CommonWeapons.length)]
-          message.channel.send("<@!"+message.author.id + ">: " + fruit)
-        }
-    
-        if(rarity == "uncommon")
-        {
-          var fruit = RareWeapons[Math.floor(Math.random()*RareWeapons.length)]
-           message.channel.send("<@!"+message.author.id + ">: " + fruit)
-        }
-        
-        if(rarity == "rare")
-        {
-         var fruit = SuperRareWeapons[Math.floor(Math.random()*SuperRareWeapons.length)]
-          message.channel.send("<@!"+message.author.id + ">: " + fruit)
-        }  
-    }
     
     if(message.content == "ten!RandomFruit")
     {
