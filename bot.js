@@ -16,8 +16,78 @@ var sadgifs = Array("https://media.giphy.com/media/YbDQYrSihr584/giphy.gif", "ht
 var cmds = "```php\n [Commands]\n [1]ten!RandomFruit\n \n [2]ten!IslandFruit\n \n [3]ten!Random (Number)\n Selects a random number from one to what you have typed in.\n \n [4]!(Emotion)\n Posts a gif depending on what emotion you typed in (F.E. !happy).```"
 var loveme = Array("No, you are stupid.","No, you are a disappointment.","No, you smell.","No, you're fat.","Yes! I love you XOXO","Yes! You're so cute!","Yes! If only I'd be real...","Go away, hoe","*Jojo reference*, that means no.","*One Piece reference*, that means yes.","You're in for a bumpy ride")
 //////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+first data:
+FPOPdata10694206663
+FPOPdata10694206665
+
+//Common  weapons
+var Axe = "Axe: 1000 Beli | 10 Power Level"
+var Cat_Claws = "Cat_claws: 2000 Beli | 20 Power Level"
+var Kessui = "Kessui: 7500 Beli | 75 Power Level"
+var Kashu = "Kashu: 5000 Beli | 50 Power Level"
+var Shigure = "Shigure: 7500 Beli | 75 Power Level"
+var Bamboo = "Bamboo: 2000 Beli | 20 Power Level"
+var Scimitar = "Scimitar: 1000 Beli | 10 Power Level"
+var Mini_Terry = "Mini_Terry: 1000 Beli | 10 Power Level"
+var Kogatana = "Kogatana: 7500 Beli | 75 Power Level"
+var Kiribachi = "Kiribachi: 10,000 Beli | 100 Power Level"
+var Flintlock = "Kiribachi: 1000 Beli | 0 Power Level | Gun"
+var Revolver = "Kiribachi: 2500 Beli | 0 Power Level | Gun"
+
+//Rare weapons
+var Mogura = "Mogura: 50,000 Beli | 500 Power Level"
+var Nanashaku_Jitte = "Nanashaku Jitte: 100,000 Beli | 1000 Power Level" 
+var Wado_Ichimonji = "Wado_Ichimonji: 25,000 Beli | 200 Power Level"
+var Shusui = "Shusui: 40,000 Beli | 400 Power Level"
+var Nidai_Kitetsu = "Nidai_Kitetsu: 40,000 Beli | 400 Power Level"
+var Sandai_Kitetsu = "Sandai_Kitetsu: 40,000 Beli | 400 Power Level"
+var Pretzel = "Pretzel: 60,000 Beli | 600 Power Level"
+var Gryphon = "Gryphon: 60,000 Beli | 600 Power Level"
+var Kikoku = "Kikoku: 60,000 Beli | 600 Power Level"
+var Durandal = "Durandal: 30,000 | 300 Power Level"
+var Shirauo = "Shirauo: 30,000 | 300 Power Level"
+var Rocket_Launcher = "Rocket_Launcher: 100,000 Beli | 10 Power Level | Gun"
+var Seastone_Rifle = "Seastone_Rifle: 50,000 Beli | 10 Power Level | Gun"
+var Dual_Walker = "Dual_Walker: 10,000 Beli | 0 Power Level | Gun"
+
+//Stupid rare
+var Yoru = "Yoru: 250,000 Beli | 3000 Power Level"
+var Morakumogiri = "Morakumogiri: 250,000 Beli | 3000 Power Level"
+var Funkfreed = "Funkfreed: 200,000 Beli | 2500 Power Level"
+
+var CommonWeapons = Array(Axe,Cat_Claws,Kessui,Kashu,Shigure,Bamboo,Scimitar,Mini_Terry,Kogatana,Kiribachi,Flintlock,Revolver)
+var RareWeapons = Array(Dual_Walker,Seastone_Rifle,Mogura,Nanashaku_Jitte,Wado_Ichimonji,Shusui,Nidai_Kitetsu,Sandai_Kitetsu,Pretzel,Gryphon,Kikoku,Durandal,Shirauo,Rocket_Launcher)
+var SuperRareWeapons = Array(Yoru,Morakumogiri,Funkfreed)
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
+    if(message.content == "ten!random)
+    {
+        var rarity = rarities[Math.floor(Math.random()*rarities.length)];
+    
+         if(rarity == "common")
+        {
+         var fruit = CommonWeapons[Math.floor(Math.random()*CommonWeapons.length)]
+          message.channel.send("<@!"+message.author.id + ">: " + fruit)
+        }
+    
+        if(rarity == "uncommon")
+        {
+          var fruit = RareWeapons[Math.floor(Math.random()*RareWeapons.length)]
+           message.channel.send("<@!"+message.author.id + ">: " + fruit)
+        }
+        
+        if(rarity == "rare")
+        {
+         var fruit = SuperRareWeapons[Math.floor(Math.random()*SuperRareWeapons.length)]
+          message.channel.send("<@!"+message.author.id + ">: " + fruit)
+        }  
+    }
+    
     if(message.content == "ten!RandomFruit")
     {
         var rarity = rarities[Math.floor(Math.random()*rarities.length)];
