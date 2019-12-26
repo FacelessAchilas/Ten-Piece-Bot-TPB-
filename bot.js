@@ -63,8 +63,39 @@ var SuperRareWeapons = Array(Yoru,Morakumogiri,Funkfreed)
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
+    /////////
     if(message.content.startsWith("ten!ItemInfo Axe")){message.channel.send("<@!"+message.author.id + ">: " + Axe)}
+    if(message.content.startsWith("ten!ItemInfo Cat_Claws")){message.channel.send("<@!"+message.author.id + ">: " + Cat_Claws)}
+    if(message.content.startsWith("ten!ItemInfo Kessui")){message.channel.send("<@!"+message.author.id + ">: " + Kessui)}
+    if(message.content.startsWith("ten!ItemInfo Kashu")){message.channel.send("<@!"+message.author.id + ">: " + Kashu)}
+    if(message.content.startsWith("ten!ItemInfo Shigure")){message.channel.send("<@!"+message.author.id + ">: " + Shigure)}
+    if(message.content.startsWith("ten!ItemInfo Bamboo")){message.channel.send("<@!"+message.author.id + ">: " + Bamboo)}
+    if(message.content.startsWith("ten!ItemInfo Scimitar")){message.channel.send("<@!"+message.author.id + ">: " + Scimitar)}
+    if(message.content.startsWith("ten!ItemInfo Mini_Terry")){message.channel.send("<@!"+message.author.id + ">: " + Mini_Terry)}
+    if(message.content.startsWith("ten!ItemInfo Kogatana")){message.channel.send("<@!"+message.author.id + ">: " + Kogatana)}
+    if(message.content.startsWith("ten!ItemInfo Kiribachi")){message.channel.send("<@!"+message.author.id + ">: " + Kiribachi)}
+    if(message.content.startsWith("ten!ItemInfo Flintlock")){message.channel.send("<@!"+message.author.id + ">: " + Flintlock)}
+    if(message.content.startsWith("ten!ItemInfo Revolver")){message.channel.send("<@!"+message.author.id + ">: " + Revolver)}
     
+    if(message.content.startsWith("ten!ItemInfo Mogura")){message.channel.send("<@!"+message.author.id + ">: " + Mogura)}
+    if(message.content.startsWith("ten!ItemInfo Nanashaku_Jitte")){message.channel.send("<@!"+message.author.id + ">: " + Nanashaku_Jitte)}
+    if(message.content.startsWith("ten!ItemInfo Wado_Ichimonji")){message.channel.send("<@!"+message.author.id + ">: " + Wado_Ichimonji)}
+    if(message.content.startsWith("ten!ItemInfo Shusui")){message.channel.send("<@!"+message.author.id + ">: " + Shusui)}
+    if(message.content.startsWith("ten!ItemInfo Nidai_Kitetsu")){message.channel.send("<@!"+message.author.id + ">: " + Nidai_Kitetsu)}
+    if(message.content.startsWith("ten!ItemInfo Sandai_Kitetsu")){message.channel.send("<@!"+message.author.id + ">: " + Sandai_Kitetsu)}
+    if(message.content.startsWith("ten!ItemInfo Pretzel")){message.channel.send("<@!"+message.author.id + ">: " + Pretzel)}
+    if(message.content.startsWith("ten!ItemInfo Gryphon")){message.channel.send("<@!"+message.author.id + ">: " + Gryphon)}
+    if(message.content.startsWith("ten!ItemInfo Kikoku")){message.channel.send("<@!"+message.author.id + ">: " + Kikoku)}
+    if(message.content.startsWith("ten!ItemInfo Durandal")){message.channel.send("<@!"+message.author.id + ">: " + Durandal)}
+    if(message.content.startsWith("ten!ItemInfo Shirauo")){message.channel.send("<@!"+message.author.id + ">: " + Shirauo)}
+    if(message.content.startsWith("ten!ItemInfo Rocket_Launcher")){message.channel.send("<@!"+message.author.id + ">: " + Rocket_Launcher)}
+    if(message.content.startsWith("ten!ItemInfo Seastone_Rifle")){message.channel.send("<@!"+message.author.id + ">: " + Seastone_Rifle)}
+    if(message.content.startsWith("ten!ItemInfo Dual_Walker")){message.channel.send("<@!"+message.author.id + ">: " + Dual_Walker)}
+    
+    if(message.content.startsWith("ten!ItemInfo Yoru")){message.channel.send("<@!"+message.author.id + ">: " + Yoru)}
+    if(message.content.startsWith("ten!ItemInfo Morakumogiri")){message.channel.send("<@!"+message.author.id + ">: " + Morakumogiri)}
+    if(message.content.startsWith("ten!ItemInfo Funkfreed")){message.channel.send("<@!"+message.author.id + ">: " + Funkfreed)}
+    /////////
     if(message.content == "ten!ShopItem")
     {
         var rarity = weaponrarities[Math.floor(Math.random()*weaponrarities.length)];
