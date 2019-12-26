@@ -65,7 +65,7 @@ var SuperRareWeapons = Array(Yoru,Morakumogiri,Funkfreed)
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
-    if(message.content == "ten!random)
+    if(message.content == "ten!ShopItem")
     {
         var rarity = rarities[Math.floor(Math.random()*rarities.length)];
     
