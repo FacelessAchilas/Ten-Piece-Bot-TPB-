@@ -70,7 +70,7 @@ bot.on('message', function(message){
          if(rarity == "common")
         {
          var fruit = CommonWeapons[Math.floor(Math.random()*CommonWeapons.length)]
-          message.channel.send(fruit)
+          message.channel.send("<@!"+message.author.id + ">: " + fruit)
         }
     
         if(rarity == "uncommon")
