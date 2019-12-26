@@ -26,19 +26,19 @@ bot.on('message', function(message){
         if(rarity == "common")
         {
          var fruit = commonfruits[Math.floor(Math.random()*commonfruits.length)]
-          message.channel.send("<@!"+message.author.id + ": " + fruit)
+          message.channel.send("<@!"+message.author.id + ">: " + fruit)
         }
     
         if(rarity == "uncommon")
         {
           var fruit = uncommonfruits[Math.floor(Math.random()*uncommonfruits.length)]
-           message.channel.send("<@!"+message.author.id + ": " + fruit)
+           message.channel.send("<@!"+message.author.id + ">: " + fruit)
         }
         
         if(rarity == "rare")
         {
          var fruit = rarefruits[Math.floor(Math.random()*rarefruits.length)]
-          message.channel.send("<@!"+message.author.id + ": " + fruit)
+          message.channel.send("<@!"+message.author.id + ">: " + fruit)
         }
     }
 
