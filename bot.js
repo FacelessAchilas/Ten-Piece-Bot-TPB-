@@ -63,11 +63,7 @@ var SuperRareWeapons = Array(Yoru,Morakumogiri,Funkfreed)
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
-    if(message.content.startsWith("ten!ItemInfo "))
-    {
-     var str = message.content.replace('ten!Random ',''); 
-     message.channel.send(window[str])
-    }
+    if(message.content.startsWith("ten!ItemInfo Axe")){message.channel.send("<@!"+message.author.id + ">: " + Axe)}
     
     if(message.content == "ten!ShopItem")
     {
