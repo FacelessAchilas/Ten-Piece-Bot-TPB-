@@ -7,6 +7,7 @@ var uncommonfruits = Array("Tori Tori no Mi (Normal zoan)","Inu Inu no Mi", "Goe
 var rarefruits = Array("Hito Hito no Mi (Normal zoan)","Gomu Gomu no Mi", "Mera Mera no Mi", "Hana Hana no Mi", "Bomu Bomu no Mi", "Toge Toge no Mi", "Sara Sara no Mi", "Moku Moku no Mi", "Suna Suna no Mi", "Goro Goro no Mi", "Hie Hie no Mi", "Pika Pika no Mi", "Gasu Gasu no Mi", "Yuki Yuki no Mi", "Tori Tori no Mi (Mythical zoan)", "Magu Magu no Mi", "Yomi Yomi no Mi", "Kage Kage no Mi", "Horo Horo no Mi", "Yami Yami no Mi", "Toki Toki no Mi", "Ope Ope no Mi", "Soru Soru no Mi", "Ito Ito no Mi", "Goru Goru no Mi", "Shibo Shibo no Mi", "Bari Bari no Mi", "Doku Doku no Mi", "Pamu Pamu no Mi", "Nikyu Nikyu no Mi", "Shiro Shiro no Mi", "Hoya Hoya no Mi", "Meta Meta no Mi", "Zuma Zuma no Mi", "Hito Hito no Mi (Mythical zoan)", "Magnet Magnet no Mi (Kid's fruit)")
 //////////////////////////////////////////////////////////////////////////
 var islandfruit = Array("No", "No", "No", "No","No", "No", "No", "Yes", "Yes", "Yes")
+var weaponrarities = Array("c","c","c","c","c","c","c","c","c","c","c","c","u","u","u","u","u","u","u","r")
 //////////////////////////////////////////////////////////////////////////
 var happygifs = Array("https://pa1.narvii.com/6422/812ba248dbfa95b26e0f1ecf9a9225a0246b1de7_hq.gif", "http://pa1.narvii.com/6362/97c3c606fbbbf6aebca68ab9fc35e6651bfcde85_hq.gif", "https://68.media.tumblr.com/c38e5421161ed8044b5e7dd15c98af7a/tumblr_olz9e6ojmS1t1yvcko7_400.gif", "https://pa1.narvii.com/5868/27b870f91df164ede0957d8f4e3faa5cdd36b571_hq.gif", "https://media.giphy.com/media/MXTbbhZNM0zo4/giphy.gif")
 var angrygifs = Array("https://i.gifer.com/5tth.gif","https://pa1.narvii.com/6381/b4930df8aeef4cc3fb56ed5b102b8310d04349c6_hq.gif", "https://i.gifer.com/3YIe.gif")
@@ -62,6 +63,29 @@ var SuperRareWeapons = Array(Yoru,Morakumogiri,Funkfreed)
 //////////////////////////////////////////////////////////////////////////
 
 bot.on('message', function(message){
+    if(message.content == "ten!ShopItem")
+    {
+        var rarity = weaponrarities[Math.floor(Math.random()*weaponrarities.length)];
+        
+        if(rarity == "c")
+        {
+          var weapon = RareWeapons[Math.floor(Math.random()*RareWeapons.length)]
+          message.channel.send("<@!"+message.author.id + ">: " + weapon) 
+        }
+        
+        if(rarity == "u")
+        {
+          var weapon = CommonWeapons[Math.floor(Math.random()*CommonWeapons.length)]
+          message.channel.send("<@!"+message.author.id + ">: " + weapon) 
+        }
+        
+        if(rarity == "r")
+        {
+          var weapon = SuperRareWeapons[Math.floor(Math.random()*SuperRareWeapons.length)]
+          message.channel.send("<@!"+message.author.id + ">: " + weapon) 
+        }
+    }
+    
     
     if(message.content == "ten!RandomFruit")
     {
